@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "test:chromium",
+			"problemMatcher": [
+				"$eslint-compact"
+			],
+			"label": "npm: test:chromium",
+			"detail": "npx playwright test --project=chromium"
+		},
+		{
+			"type": "npm",
+			"script": "test:first",
+			"problemMatcher": [
+				"$go"
+			],
+			"label": "npm: test:first",
+			"detail": "npx playwright test --grep @first"
+		}
+	]
+}
