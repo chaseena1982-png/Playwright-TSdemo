@@ -4,9 +4,9 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-    workflow_dispatch:
-    schedule:
-    - cron: '30 16 * * 1-5' # Runs at 16:00 UTC every weekday
+      workflow_dispatch:
+      schedule:
+        - cron: '30 16 * * 1-5' # Runs at 16:00 UTC every weekday
 
 jobs:
   test:
