@@ -6,7 +6,7 @@ on:
     branches: [ main, master ]
       workflow_dispatch:
       schedule:
-        - cron: '30 16 * * 1-5' # Runs at 16:00 UTC every weekday
+        - cron: '30 17 * * 1-5' # Runs at 17:00 UTC every weekday
 
 jobs:
   test:
