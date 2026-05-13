@@ -4,9 +4,9 @@ on:
   schedule:
     - cron: "*/4 * * * *" # Runs every day at midnight 
   push:
-    branches: [ Playwright-TSdemo, master ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ Playwright-TSdemo, master ]
+    branches: [ main, master ]
 jobs:
   test:
     timeout-minutes: 60
