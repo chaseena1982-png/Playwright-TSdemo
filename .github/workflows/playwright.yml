@@ -2,7 +2,7 @@ name: Playwright Tests
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *" # Runs every 5 minutes
+    - cron: '58 2 * * 2-6' # Runs every day at midnight 
   push:
     branches: [ main, master ]
   pull_request:
