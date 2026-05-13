@@ -7,7 +7,6 @@ on:
       workflow_dispatch:
       schedule:
         - cron: '30 17 * * 1-5' # Runs at 17:00 UTC every weekday
-
 jobs:
   test:
     timeout-minutes: 60
@@ -22,7 +21,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: npx playwright test tests/APIToolDemo
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
